@@ -4,7 +4,7 @@
         
                 <ul>
                     <li v-for="(link, i) in links" :key="i">
-                        <a :href="link.url">{{link.img}}{{link.text}}</a>
+                        <a :href="link.url"><img :src="link.img"><span>{{link.text}}</span></a>
                     </li>
                 </ul>
         
@@ -25,24 +25,28 @@
                 {
                     text: "DIGIATAL COMICS",
                     url: "#",
-                    img: "../assets/img/buy-comics-digital-comics.png"
+                    img: require("../assets/img/buy-comics-digital-comics.png")
                     
                 }, 
                 {
                     text: "DR MERCHANDISE",
-                    url: "#"
+                    url: "#",
+                    img: require("../assets/img/buy-comics-merchandise.png")
                 },
                 {
                     text: "SUBSCRIPTIONS",
-                    url: "#"
+                    url: "#",
+                    img: require("../assets/img/buy-comics-subscriptions.png")
                 },
                 {
                     text: "COMIC SHOP LOCATOR",
-                    url: "#"
+                    url: "#",
+                    img: require("../assets/img/buy-comics-shop-locator.png")
                 }, 
                 {
                     text: "DS POWER VISA",
-                    url: "#"
+                    url: "#",
+                    img: require("../assets/img/buy-dc-power-visa.svg")
                 }
                 
             ]
@@ -80,7 +84,14 @@
     a {
         text-decoration: none;
         color: white;
+        display: flex;
+        align-items: center;
         
+    }
+
+    img {
+        width: 50px;
+        height: 65px;
     }
     
 </style>
