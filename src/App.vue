@@ -3,6 +3,7 @@
     <MyHeader/>
     <MyMain/>
     <MySecondoMain/>
+    <MyFooter/>
   </div>
 </template>
 
@@ -10,13 +11,15 @@
   import MyHeader from './components/MyHeader.vue'
   import MyMain from './components/MyMain.vue'
   import MySecondoMain from './components/MySecondoMain.vue'
+  import MyFooter from './components/MyFooter.vue'
 
 export default {
   name: 'App',
   components: {
     MyHeader,
     MyMain,
-    MySecondoMain
+    MySecondoMain,
+    MyFooter
 }
 }
 </script>
