@@ -1,7 +1,13 @@
 <!-- HTML -->
 <template>
-    <div>il contenuto va qui</div>
-    
+            <div class="container">
+                <ul>
+                    <li v-for="(link, i) in comic" :key="i">
+                        <img :src="link.thumb" alt="">
+                        <div>{{link.series}}</div>
+                    </li>
+                </ul>
+            </div>
 </template>
 
 <!-- javascript -->
@@ -10,6 +16,9 @@
     export default {
         name: 'MyMain',
 
+        props: {
+            comic: Array,
+        }
     }
 
 </script>
@@ -17,10 +26,18 @@
 <!-- CSS -->
 
 <style scoped>
-    div {
+    .container {
         background-color: black;
         color: white;
         height: 150px;
+    }
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    li {
+        display: inline-block;
     }
     
 </style>

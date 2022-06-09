@@ -41,6 +41,7 @@
         display:flex;
         justify-content: space-around;
         align-items: center;
+        
     }
     ul {
         display:flex;
@@ -53,6 +54,13 @@
         list-style: none;
         color: blue;
         margin: 15px;
+    }
+
+    button {
+        background-color: rgb(80, 80, 80);
+        border: 3px solid aquamarine;
+        padding: 15px;
+        color: white;
     }
 
 
