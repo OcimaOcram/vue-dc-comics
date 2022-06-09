@@ -69,6 +69,7 @@
         display:flex;
         justify-content: space-between;
         height: 370px;
+        padding: 50px;
     }
 
     ul {

@@ -41,6 +41,7 @@
         display:flex;
         justify-content: space-around;
         align-items: center;
+        padding: 50px;
         
     }
     ul {
