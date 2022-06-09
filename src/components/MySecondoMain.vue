@@ -73,6 +73,9 @@
         align-items: center;
         justify-content: space-between;
     }
+    ul {
+        margin: auto;
+    }
     li {
         display: inline-block;
         padding-left: 15px;

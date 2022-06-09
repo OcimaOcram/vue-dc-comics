@@ -77,6 +77,10 @@
     }
     li {
         list-style: none;
+        color: grey;
+    }
+    li:hover {
+        color : white;
     }
     img {
         height:100%;
@@ -89,4 +93,5 @@
         background-size: 100%;
         background-position: center;
     }
+
 </style>
